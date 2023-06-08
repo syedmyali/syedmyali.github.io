@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family:"poppins", sans-serif;
+}
+
+body{
+    background: #fff;
+    font-family: arial;
+    height: 100vh;
+}
+
+.wraper{
+    width: 95%;
+    margin: 0 auto;
+    
+}
+
+.heading-container { 
+    position: relative;
+    width: 30%;
+    padding-bottom: 4%;
+    padding-top: 1%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1%; 
+  }
+  .heading {
+    position: absolute;
+    width: 100%;
+    background-color: #005EB8;
+    color: #fff; 
+    font-size: 1.8vw;
+    padding: 3% 2% 3% 2%;
+    border-radius: 15px;
+  }
+
+#search-container {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+::placeholder {
+    color: rgb(159, 159, 159);
+    font-size: 1.2vw;
+  }
+
+#search-container input {
+    background-color: #005EB8;
+    width: 95%;
+    padding: .3rem 0.3rem;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    
+}
+
+#search-container input:focus {
+    border-bottom-color: #005EB8;
+    color: white;
+}
+
+#search-container button {
+
+    padding: .8em 1.5em;
+    margin-left: 1em;
+    background-color: #005EB8;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2vw;
+    letter-spacing: .05em;
+    
+    
+}
+
+.categories-container { 
+    position: relative;
+    width: 15%;
+    padding-bottom: 4%;
+    padding-top: 1%;
+    text-align: center;
+    
+  }
+  .categories {
+    position: absolute;
+    width: 100%;
+    background-color: #005EB8;
+    color: #fff; 
+    font-size: 1.3vw;
+    padding: .3em;
+    border-radius: 5px;
+    
+  }
+
+#buttons {
+    margin-bottom: 2em;
+}
+
+#buttons button {
+    position: relative;
+    display: inline-flex;
+    border: 2px solid #005EB8;
+    padding: .5% 1.1%;
+    margin-top: 0em;
+  
+    border-radius: 1.5em;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    font-size: 1.1vw;
+    font-weight: bold;
+    
+}
+
+#buttons button:hover {
+    background-color: #005EB8;
+    color: #fff;
+}
+
+#buttons button.active{
+    background: #005EB8;
+    color: #fff;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 1em;
+    justify-content: space-between;
+    padding: 1em 0;
+    
+}
+
+.card {
+    background-color: #fff;
+    max-width: 18rem;
+    margin-top: .5em;
+    margin-bottom: 2em;
+    padding: 0em;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+    
+}
+
+.image-container {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 12em;
+    
+}
+
+.container {
+    text-align: center;
+    padding-top: .2em;
+    color: #110f29;
+}
+
+.container h5 {
+    font-weight: 500;
+    font-size: 1.1vw;
+}
+
+.container h4 {
+    
+    font-size: 1.2vw;
+}
+
+.hide {
+    display: none;
+}
+
+
+h3 div {
+    display: inline-block;
+    min-width: 30px;
+    padding: 0px;
+    background: #005EB8;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid #005EB8;
+    margin: 5px 2px;
+    font-size: 1.2vw;
+ 
+}
+h3 div span {
+    display: block;
+    margin-top: 1px;
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+
+h3 p {
+    margin-top: .5rem;
+    font-weight:500;
+    font-size: 1.5vw;
+    color: red;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #003363;
+    padding: 15px 0px;
+    color: #fff;
+    text-align: center;
+    
+  }
+  
+
+
+
+@media screen and (max-width: 1020px) {
+    .categories-container { 
+        margin-bottom: -15px;
+      }
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+    .card {
+        max-width: 16em;
+        margin-top: 1em;
+    }
+    #products {
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 1em;
+        justify-content:space-between;
+    }
+    #buttons button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .categories-container { 
+        margin-bottom: -15px;
+      }
+
+   
+      
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .card {
+        max-width: 16em;
+        margin-top: 1em;
+    }
+
+    #products {
+        grid-template-columns: auto auto;
+        grid-column-gap: 1em;
+        justify-content:space-between;
+    }
+
+    #buttons button {
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    #products {
+        grid-template-columns: auto;
+        grid-column-gap: 1em;
+        justify-content:center;
+    }
+}
+
+
+
+
+

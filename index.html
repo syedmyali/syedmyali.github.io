@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Syed" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Ali | Portfolio</title>
+    <link rel="stylesheet" href="./portfolio/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="shortcut icon" href="./portfolio/images/faviconSA.ico" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+    <!-- <link rel="icon" href="https://image.flaticon.com/icons/png/512/40/40031.png"> -->
+</head>
+<body>
+    <!-- Color mode and scroll-up butoon starts here -->
+    <div class="color-mode">
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <!-- Color mode and scroll-up butoon starts here -->
+
+    <!-- Nav section starts here -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#"> <span>&lt;</span> Syed<span>Ali</span><span> &gt;</span></a></div>
+            <ul class="menu">
+               
+                <li class="links "><a href="#home" class="menu-btn active "><span class="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                </span>Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#services" class="menu-btn">Projects</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#teams" class="menu-btn">Testimonials</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav section ends here -->
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                 <div class="column left">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2">Syed Ali,</div>
+                    <div class="text-3">I am a <br> <span class="typing"></span></div>
+                    <a class="card-btn" href="#about">Explore Me</a>
+                </div>
+                <div class="column right">   
+                    <!-- <img src="/Images/laptop1.png" alt=""> -->
+                    
+                    <video poster="./portfolio/images/portfolioDark.PNG" autoplay loop muted controls>
+                    <source src="./portfolio/images/portfolioVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+                    <!-- <div class="video-content">
+                        Projects Preview!
+                    </div> -->
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home section ends here -->
+
+    <!-- About section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <!-- <div class="column left">
+                    <img src="/practice-project/assets/coding_desk.jpg" alt="">
+                </div> -->
+                <div class="column right">
+                    <div class="text">Hi! I'm a <span class="typing-2"></span></div>
+                    <p> To thrive my career, I have completed 
+                        several software development courses online and oncampus.
+                        I have succssfully finished <strong>'Full Stack Software 
+                        Development Bootcamp'</strong>  with <b>JustIT</b>  and another four-month long bootcamp on <strong> 'Building 
+                        New Career in Software Development'</strong> with London based training provider, <b>CityLit</b> .
+                        <br><br>
+                        I am also a Mechanical Engineer with more than 
+                        10 years experience in energy and construction industry.
+                        I am looking to switch career to software development industry and
+                        want to apply past work experiences as valuable transferable skills.
+                        </p>
+                    <a class="card-btn" href="https://www.linkedin.com/in/syed-ali-08b1a920" target="_blank"><i class="fab fa-linkedin"></i>&nbsp; LinkedIn</a>
+                    <a class="card-btn" href="https://github.com/SyedAli-GitHub" target="_blank"><i class="fab fa-github"></i>&nbsp; GitHub</a>
+                    <a class="card-btn" href="./CV/CV-SyedAli.pdf" target="_blank"><i class="fa fa-file-pdf"></i>&nbsp; Resume</a>
+                </div>
+                <!-- <div class="column left">
+                    <img src="./portfolio/images/Syed-Photo.PNG" alt="">
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- About section ends here -->
+
+   <!-- Services section starts here -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+                <div class="card-wrap">
+                    <div class="card1">
+                        <!-- <div class="replit-link"> -->
+                           <a href="http://employee-service-app.s3-website-us-east-1.amazonaws.com" target="_blank"> <img src="/portfolio/images/EmployeeMS.PNG" alt="employee"></a> 
+                        <!-- </div> -->
+                        <div class="replit-content">
+                            <h2 class="card-title">Employee Management App</h2>
+                            <h3>Technologies: Java, Spring Boot, Angular, MySQL, AWS(RDS, Beanstalk, S3)</h3>
+                            <p class="card-sub-title">
+                                Web application which manages employee details. 
+                                User can add, show, update, delete, search and filter employee details.   
+                            </p>
+                            <a class="card-btn" href="https://github.com/syedmyali/EmployeeManagementAppUI" target="_blank">GitHub</a>
+                            <a class="card-btn" href="http://employee-service-app.s3-website-us-east-1.amazonaws.com" target="_blank">Live WebApp</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a href="./medicinesExpiryChecker/medicineExpiryChecker.html" target="_blank"><img src="./medicinesExpiryChecker/medicineExpiryChecker.PNG" alt=""></a>
+                        <div class="card-content">
+                            <h2 class="card-title">Expiry Checking App</h2>
+                            <h3>Tecknologies: HTML, CSS, Javascript</h3>
+                            <p class="card-sub-title">
+                            Checks expiry date and stock status of medicines in medical facilities
+                            </p>
+                            <a class="card-btn" href="https://github.com/SyedAli-GitHub//Medicine-Expiry-Checker" target="_blank">GitHub</a>
+                            <a class="card-btn" href="./medicinesExpiryChecker/medicinesExpiryChecker.mp4" target="_blank">Video Demo</a>
+                        </div> 
+                    </div>
+            
+                    <div class="card">
+                        <a href="./creativeEngineeringLtd/creative.html" target="_blank"><img src="./creativeEngineeringLtd/images/creativeEngineering2.PNG" alt=""></a>
+                        <div class="card-content">
+                            <h2 class="card-title">Company Website</h2>
+                            <h3>Technologies: HTML, CSS (Bootstrap)</h3>
+                            <p class="card-sub-title">
+                            Professional, responsive and scalable engineering company website
+                            </p>
+                            <a class="card-btn" href="https://github.com/SyedAli-GitHub//Engineering-Company-Website" target="_blank">GitHub</a>
+                            <a class="card-btn" href="./creativeEngineeringLtd/images/creativeVideo.mp4" target="_blank">Video Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <!-- <div class="replit-link"> -->
+                            <iframe src="https://replit.com/@syounusa/FilmFlix?embed=true" 
+                            frameborder="0"
+                            ></iframe>
+                        <!-- </div> -->
+                        <div class="replit-content">
+                            <h2 class="card-title">Film Flix App</h2>
+                            <h3>Technologies: Python, SQL</h3>
+                            <p class="card-sub-title">
+                                CURD application which stores film details. 
+                                User can add, show, update and delete individual item in the film list.   
+                            </p>
+                            <a class="card-btn" href="https://github.com/SyedAli-GitHub/Film-Flix" target="_blank">GitHub</a>
+                            <a class="card-btn" href="./filmFlix/filmFlix.mp4" target="_blank">Video Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="card1 alumni">
+                        <!-- <div class="replit-link"> -->
+                            <iframe src="https://replit.com/@syounusa/Alumni-Tracking-App?embed=true" 
+                            frameborder="0" 
+                            ></iframe>  
+                        <!-- </div> -->
+                        <div class="replit-content">
+                            <h2 class="card-title">Alumni Tracking App</h2>
+                            <h3>Technologies: Python, Tkinter, SQLite</h3>
+                            <p class="card-sub-title">
+                                Desktop application where alumni can register their information so that others can find
+                                when and where needed 
+                            </p>
+                            <a class="card-btn" href="https://github.com/SyedAli-GitHub/University_Alumni_Tracking_App" target="_blank">GitHub</a>
+                            <a class="card-btn" href="./alumniTrackingAppSqlite/University Alumni Tracking App/alumniTrackingApp.mp4" target="_blank">Video Demo</a>
+                        </div>
+                    </div>
+                    
+                    <div class="video1">
+                        <!-- <a href="./passwordgenerator/passwordGenerator.html" target="_blank"><video loop muted src="./passwordgenerator/passwordGenerator.mp4" class="clip"></video></a> -->
+                        <a href="./passwordgenerator/passwordGenerator.html" target="_blank"><img src="./passwordgenerator/passwordGenerator.PNG" alt="Password Generator"></a>
+                        <div class="video-content">
+                            <h2 class="video-title">Password Generator</h2>
+                            <h3>Technologies: Javascrip, HTML, CSS</h3>
+                            <p class="video-sub-title">
+                            Generates random password with numbers, letters and symbols 
+                            </p>
+                            <a class="card-btn" href="https://github.com/SyedAli-GitHub/Password-Generator" target="_blank">GitHub</a>
+                            <a class="card-btn" href="./passwordgenerator/passwordGenerator.mp4" target="_blank">Video Demo</a>
+                        </div>
+                    </div>
+                    <div class="video1">
+                        <!-- <a href="./scientificCalculator/scientificCalculator.html" target="_blank"><video loop muted src="./scientificCalculator/scientificCalculator.mp4" class="clip"></video></a> -->
+                        
+                        <a href="./scientificCalculator/scientificCalculator.html" target="_blank"><img src="./scientificCalculator/calculator.PNG" alt="Scientific Calculator"></a>
+                        <div class="video-content">
+                            <h2 class="video-title">Scientific Calculator</h2>
+                            <h3>Technologies: Javascript, HTML, CSS</h3>
+                            <p class="video-sub-title">
+                            Smart and responsive scientific calculator
+                            </p>
+                            <a class="card-btn" href="https://github.com/SyedAli-GitHub/Scientific-Calculator" target="_blank">GitHub</a>
+                            <a class="card-btn" href="./scientificCalculator/scientificCalculator.mp4" target="_blank">Video Demo</a>
+                        </div>
+                    </div>
+                </div> 
+        </div>
+    </section>
+    <!-- Service section ends here -->
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skills-card">
+                    <div class="image">
+                        <img class="html" src="./portfolio/images/html1.png" alt="">
+                    </div>
+                    <div class="caption">
+                        <h2>HTML 5</h2>
+                        <h3>Expertise: Midlevel</h3>
+                    </div>
+                </div>  
+                
+                <div class="skills-card">
+                    <div class="image">
+                        <img class="css" src="./portfolio/images/css_c.png" alt="">
+                    </div> 
+                    <caption>
+                        <h2>CSS 3</h2>
+                        <h3>Expertise: Midlevel</h3>
+                    </caption>  
+                </div>  
+
+                <div class="skills-card">
+                    <div class="image">
+                        <img src="./portfolio/images/js_c.svg" alt="">
+                    </div> 
+                    <caption>
+                        <h2>Java Script</h2>
+                        <h3>Expertise: Lower Midlevel</h3>
+                    </caption>  
+                </div>  
+
+                <div class="skills-card">
+                    <div class="image">
+                        <img class="bootstrap"  src="./portfolio/images/bootstrap_c.jpg" alt="">
+                    </div>
+                    <caption>
+                        <h2>Bootstrap</h2>
+                        <h3>Expertise: Midlevel</h3>
+                    </caption>   
+                </div>
+
+                <!-- <div class="skills-card">
+                    <div class="image">
+                        <img style="width: 106%;"  src="./portfolio/images/github.webp" alt="">
+                    </div>
+                    <caption>
+                        <h2>GitHub</h2>
+                        <h3>Expertise: Midlevel</h3>
+                    </caption>  
+                </div>  -->
+
+                <div class="skills-card">
+                    <div class="image">
+                        <img  src="./portfolio/images/python_c.png" alt="">
+                    </div>
+                    <caption>
+                        <h2>Python 3</h2>
+                        <h3>Expertise: Midlevel</h3>
+                    </caption>  
+                </div> 
+
+                <div class="skills-card">
+                    <div class="image">
+                        <img  src="./portfolio/images/java-logo1.png" alt="">
+                    </div>  
+                    <caption>
+                        <h2>Java</h2>
+                        <h3>Expertise: Lower Midlevel</h3>
+                    </caption> 
+                </div> 
+
+                <div class="skills-card">
+                    <div class="image">
+                        <img  src="./portfolio/images/mysql.png" alt="">
+                    </div>
+                    <caption>
+                        <h2>MySQL</h2>
+                        <h3>Expertise: Midlevel</h3>
+                    </caption>  
+                </div> 
+
+                <!-- <div class="skills-card">
+                    <div class="image">
+                        <img  src="./portfolio/images/vscode.png" alt="">
+                    </div>
+                    <caption>
+                        <h2>VS Studio</h2>
+                        <h3>Expertise:Mid Level</h3>
+                    </caption>  
+                </div>  -->
+
+                <!-- <div class="skills-card">
+                    <div class="image">
+                        <img  src="./portfolio/images/jquery.webp" alt="">
+                    </div>
+                    <caption>
+                        <h2>Jquery-3</h2>
+                        <h3>Expertise: Lower Level</h3>
+                    </caption>   
+                </div>  -->
+
+                <!-- <div class="skills-card">
+                    <div class="image">
+                        <img class="mongo"  src="./portfolio/images/mongo.png" alt="">
+                    </div>
+                    <caption>
+                        <h2>MongoDB</h2>
+                        <h3>Expertise: Lower Level</h3>
+                    </caption>   
+                </div>  -->
+
+                <div class="skills-card">
+                    <div class="image">
+                        <img class="react"  src="./portfolio/images/react-logo.png" alt="">
+                    </div>
+                    <caption>
+                        <h2>React</h2>
+                        <h3>Expertise: Lower Midlevel</h3>
+                    </caption>   
+                </div>              
+            </div>
+        </div>
+    </section>
+    <!-- skills section ends here -->                
+
+   <!-- teams section starts here -->
+   <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">Testimonials</h2>
+            <div class="carousel owl-carousel">
+
+                <div class="card">
+                    <div class="box">
+                        <img src="./portfolio/images/Kazi Islam.jfif" alt="">
+                        <div class="text">Kazi I.</div>
+                        <p>Syed Ali was my classmate. He is 
+                            a very well presented and organised about his 
+                            tasks. He knows his ability and very confident 
+                            about what he does. I wish him all the best 
+                            for his career</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="./portfolio/images/Nick Duggan.jfif" alt="">
+                        <div class="text">Nick D.</div>
+                        <p>Syed is a pleasure to work with; he is dependable, 
+                            knowlegable and has great attention to detail. Syed 
+                            is always happy to help and is a fantastic guy to 
+                            have on your team.</p>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="box">
+                        <img src="./portfolio/images/John Chandiyamba.jfif" alt="">
+                        <div class="text">John C.</div>
+                        <p>Highly focused and dedicated team player. He is 
+                            always consistent and goal oriented. I would 
+                            like to recommend Syed to any team that is 
+                            focused and want to deliver the best results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- teams section ends here -->
+
+    <!-- contact section starts here -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <!-- <div class="text">Contact Details</div> -->
+                    <!-- <p>I am more than happy to provide information you need in respect of work expecriences, skills and projects.</p> -->
+                    <div class="icons">
+                        <div class="row">
+                            <!-- <i class="fas fa-user"></i> -->
+                            <i class="fa fa-user-circle" aria-hidden="true"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Syed Younus Ali</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            
+                            
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">East Ham, London, UK</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- <i class="fas fa-envelope"></i> -->
+                            <i class="fas fa-at"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">syounusa@yahoo.com</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39708.
+                    786865402086!2d-0.017081082702979845!3d51.53524309776968!2m3!1f0!2f0!3f0!
+                    3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a637210a1825%3A0xfaf9164941a804a5!
+                    2sEast%20Ham%2C%20London%2C%20UK!5e0!3m2!1sen!2sit!4v1654768377165!5m2!1sen!
+                    2sit"  style="border:0;" allowfullscreen="" 
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me!</div>
+                    <form class="contact-form"  action="https://formspree.io/f/xleagpry"
+                    method="POST">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" class="fullname" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" class="email-input" placeholder="Email" name="_replyto" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" class="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea class="message" cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button class="send-msg" type="submit" name="send">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section ends here -->
+
+    <!-- footer section starts here -->
+    <footer>
+        <span>SyedAli</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+    </footer>
+    <!-- footer section ends here -->
+
+    <script src="./portfolio/script.js"></script>
+    <script>
+        const clip = document.querySelectorAll('.clip')
+        for (let i = 0; i<clip.length; i++){
+            clip[i].addEventListener('mouseenter', function(e){
+                clip[i].play()
+            })
+            clip[i].addEventListener('mouseout', function(e){
+                clip[i].pause()
+            })
+        }
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@400;500&display=swap" rel=""stylesheet/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css"/>
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/medicinesExpiryChecker/favicon-32x32.png"> -->
+    <title>Medicine Expiry Checker</title>
+</head>
+<body style="background-color:rgb(219, 230, 255);">
+    <div class="wraper">
+        <div class="heading-container">
+            <h1 class="heading"><i class="fa fa-medkit"></i> Medicine Expiry Checker <i class="fa fa-medkit"></i></h1>
+        </div>
+        <div id="search-container">
+            <input type="search" name="" id="search-input" placeholder="Search items here...">
+            <button id="search">Search</button>
+            <button onclick="clearSearch();">Clear</button>
+        </div>
+        <div class="categories-container">
+            <h2 class="categories">Medicine Catagories</h2>
+        </div>
+        <div id="buttons">
+            <button class="button-value" onclick="filterProduct('all')">All</button>
+            <button class="button-value" onclick="filterProduct('Liquid')">Liquid</button>
+            <button class="button-value" onclick="filterProduct('Tablet')">Tablet</button>
+            <button class="button-value" onclick="filterProduct('Capsules')">Capsules</button>
+            <button class="button-value" onclick="filterProduct('Topical')">Topical</button>
+            <button class="button-value" onclick="filterProduct('Suppositories')">Suppositories</button>
+            <button class="button-value" onclick="filterProduct('Drops')">Drops</button>
+            <button class="button-value" onclick="filterProduct('Inhalers')">Inhalers</button>
+            <button class="button-value" onclick="filterProduct('Injections')">Injections</button>
+            <button class="button-value" onclick="filterProduct('Spray')">Spray</button>
+            <button class="button-value" onclick="filterProduct('Patches')">Patches</button>
+            <button class="button-value" onclick="filterProduct('Buccal')">Buccal</button>
+            <button class="button-value" onclick="filterProduct('Sublingual')">Sublingual</button>
+        </div>
+        <div id="products"></div>
+        <!-- <div id="timer">0</div> -->
+        
+    
+    </div>
+
+    <footer>
+        <span>Syed Ali</a> | <span class="fa fa-copyright"></span> 2022 All rights reserved.</span>
+    </footer>
+    
+    
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script type = "text/javascript">
+        $(document).on('click', 'div button', function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    </script>
+
+    
+    
+</body>
+</html>
