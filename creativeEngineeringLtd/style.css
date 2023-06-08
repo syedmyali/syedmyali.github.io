@@ -1,0 +1,83 @@
+li{
+   margin-right: 1.5rem; 
+}
+
+
+
+.navbar-nav .nav-item>a:hover{
+    border-bottom: 2px solid rgb(255, 0, 0);
+    
+    /* background: lightskyblue; */
+    /* margin-top: -12px;
+    padding-top: 12px;
+    margin-bottom: -25px;
+    padding-bottom: 25px; */
+    transition: all .3s ease;
+  }
+
+  
+  
+  .nav-item li {
+    margin-right: 0;
+    
+  }
+
+  
+  .navbar{
+    background-color: rgb(150, 150, 150);
+  }
+
+  .navbar-brand{
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      
+  }
+
+  .carousel-item img{
+    height: 70vh;
+  }
+
+  .carousel-item h5{
+    font-size: 40px;
+  }
+
+  .carousel-item p{
+    font-size: 25px;
+  }
+
+  .p-5 img{
+    width: 100%;
+  }
+
+  div .btn-primary:hover{
+    background: green;
+    border-bottom: 2px solid rgb(255, 0, 0);
+  }
+  @media (max-width: 400px) {
+    .navbar .navbar-brand{
+      font-size: 1.1rem;
+    }
+  }
+
+  
+
+
+
+  
+
+ 
+
+ 
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
